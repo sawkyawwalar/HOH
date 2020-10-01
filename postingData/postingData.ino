@@ -1,5 +1,6 @@
 #include <WiFiClient.h> 
 #include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
 const char *ssid     = "your-ssid";
 const char *password = "your-password";
 
@@ -30,4 +31,18 @@ void setup() {
 int value = 0;
 
 void loop() {
-}
+  HTTPClient http;
+  http.begin("yourthingspeakapi");  //Specify request destination
+  int httpCode = http.GET();                                                                  //Send the request
+ 
+  if (httpCode > 0) { //Check the returning code
+ 
+    String payload = http.getString();   //Get the request response payload
+    Serial.println(payload);                     //Print the response payload
+ 
+    }
+ 
+  http.end();   //Close connection
+  delay(30000);
+  }
+ 
