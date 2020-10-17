@@ -1,0 +1,93 @@
+int gettingDays(temp,moist){
+    if(temp > 30){
+      switch (moist){
+        case 14: return 120; break;
+        case 15: return 30;break;
+        case 16: return 15;break;
+        case 17: return 8;break;
+        case 18: return 5;break;
+        default: return 5;
+        }}
+    else if (temp > 27 && temp < 30){
+      switch (moist){
+        case 14: return 160; break;
+        case 15: return 60;break;
+        case 16: return 30;break;
+        case 17: return 15;break;
+        case 18: return 8;break;
+        case 19: return 8; break;
+        default: return 5;
+        }
+      }
+    else if (temp > 25 && temp < 27){
+        switch (moist){
+        case 14: return 240; break;
+        case 15: return 120;break;
+        case 16: return 60;break;
+        case 17: return 30;break;
+        case 18: return 15;break;
+        case 19: return 15; break;
+        case 20: return  8; break;
+        case 21: return  8; break;
+        default: return 5;}
+      }
+    else if (temp > 20 && temp < 25){
+        switch (moist){
+        case 14: return 270; break;
+        case 15: return 160;break;
+        case 16: return 120;break;
+        case 17: return 60;break;
+        case 18: return 30;break;
+        case 19: return 20; break;
+        case 20: return  15; break;
+        case 21: return  15; break;
+        case 22: return  10; break;
+        case 23: return  8; break;
+        case 24: return  8; break;
+        default: return 5;}
+      }
+    else if (temp > 15 && temp < 20){
+      switch (moist){
+        case 14: return 270; break;
+        case 15: return 240;break;
+        case 16: return 150;break;
+        case 17: return 120;break;
+        case 18: return 60;break;
+        case 19: return 30; break;
+        case 20: return  30; break;
+        case 21: return  30; break;
+        case 22: return  15; break;
+        case 23: return  15; break;
+        default: return 5;}
+        }
+    else if (temp > 10 && temp < 15){
+      switch (moist){
+        case 14: return 280; break;
+        case 15: return 280;break;
+        case 16: return 240;break;
+        case 17: return 160;break;
+        case 18: return 120;break;
+        case 19: return 80; break;
+        case 20: return  60; break;
+        case 21: return  30; break;
+        case 22: return  30; break;
+        case 23: return  20; break;
+        case 24: return  15; break;
+        default: return 5;}
+      }
+    else if (temp > 5 && temp < 10){}
+    switch (moist){
+        case 14: return 280; break;
+        case 15: return 280;break;
+        case 16: return 280;break;
+        case 17: return 270;break;
+        case 18: return 240;break;
+        case 19: return 120; break;
+        case 20: return  90; break;
+        case 21: return  60; break;
+        case 22: return  50; break;
+        case 23: return  30; break;
+        case 24: return  20; break;
+        default: return 5;}
+    }
+ 
